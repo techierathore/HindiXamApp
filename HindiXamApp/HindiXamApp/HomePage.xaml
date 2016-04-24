@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:lEx="clr-namespace:HindiXamApp;assembly=HindiXamApp"
+             x:Class="HindiXamApp.HomePage">
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" />
+  </ContentPage.Padding>
+  <ContentPage.Content>
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="10"/>
+      </Grid.ColumnDefinitions>
+      <Label Grid.Row ="0" Grid.Column="1" Text="{lEx:Translate SelectLanguage}" />
+      <Picker  Grid.Row="0" Grid.Column="2" x:Name="pkrLanguage" SelectedIndexChanged="OnPickerChanged" WidthRequest="50" >
+        <Picker.Items>
+          <x:String>English</x:String>
+          <x:String>हिन्दी</x:String>
+        </Picker.Items>
+      </Picker>
+      <Label Grid.Row ="1" Grid.Column="1" Text="{lEx:Translate Name}" />
+      <Label Grid.Row="1" Grid.Column="2"  Text ="{lEx:Translate NameValue}" />
+      <Label Grid.Row ="2" Grid.Column="1" Text="{lEx:Translate DateOfBirth}" />
+      <Label Grid.Row="2" Grid.Column="2" Text ="{lEx:Translate DOBValue}"/>
+      <Label Grid.Row ="3" Grid.Column="1" Text="{lEx:Translate Gender}" />
+      <Label Grid.Row="3" Grid.Column="2" Text ="{lEx:Translate GenderValue}"/>
+      <Label Grid.Row ="4" Grid.Column="1" Text="{lEx:Translate Address}"  />
+      <Label Grid.Row="4" Grid.Column="2" Text ="{lEx:Translate AddressValue}" />
+      <Label Grid.Row ="5" Grid.Column="1" Text="{lEx:Translate State}"  />
+      <Label Grid.Row="5" Grid.Column="2" Text ="{lEx:Translate StateValue}" />
+      <Label Grid.Row ="6" Grid.Column="1" Text="{lEx:Translate Country}"/>
+      <Label Grid.Row="6" Grid.Column="2" Text ="{lEx:Translate CountryValue}" />
+    </Grid>   
+  </ContentPage.Content>
+</ContentPage>
