@@ -58,6 +58,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.kn.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resx\AppResources.mr-IN.Designer.cs" />
+    <Compile Include="Resx\AppResources.mr-IN1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.mr-IN.resx</DependentUpon>
+    </Compile>
     <Compile Include="TranslateExtension.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -74,6 +80,10 @@
     <EmbeddedResource Include="Resx\AppResources.kn.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>AppResources.kn.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resx\AppResources.mr-IN.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.mr-IN1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resx\AppResources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
