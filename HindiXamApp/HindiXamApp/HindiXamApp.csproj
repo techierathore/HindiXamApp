@@ -43,6 +43,11 @@
     </Compile>
     <Compile Include="ILocalize.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resx\AppResources.bn-IN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.bn-IN.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resx\AppResources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -84,6 +89,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resx\AppResources.bn-IN.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.bn-IN.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resx\AppResources.hi.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>AppResources.hi.Designer.cs</LastGenOutput>
