@@ -19,6 +19,11 @@ namespace HindiXamApp
                 DependencyService.Get<ILocalize>().ChangeLocale("kn");
                 App.CultureCode = "kn";
             }
+            if (vSelectedValue.Trim() == "मराठी")
+            {
+                DependencyService.Get<ILocalize>().ChangeLocale("mr");
+                App.CultureCode = "mr";
+            }
             else if(vSelectedValue.Trim() == "हिन्दी")
             {
                 DependencyService.Get<ILocalize>().ChangeLocale("hi");
